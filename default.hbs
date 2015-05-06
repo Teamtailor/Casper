@@ -35,6 +35,23 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
+    <section class="first-section">
+        <header class="header-top" style="top: 0px;">
+            <div class="wrapper">
+                <a class="logo" href="http://www.teamtailor.com/en">
+                    <img alt="Teamtailor" class="logopic" src="/assets/pictures/logo-white@2x.png">
+                </a>
+                <nav>
+                    <span id="js-mobile-menu-trigger" class="burger"><span>Meny</span></span>
+                        {{ "navigation"}}
+                </nav>
+            </div>
+        </header>
+        {{#is "index"}}
+        <h1 class="headline">Always up to date!</h1>
+        <p>The Teamtailor Blog</p>
+        {{/is}}
+    </section>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
