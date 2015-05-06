@@ -1,0 +1,34 @@
+<section class="right-box">
+    <h4>Share this post</h4>
+    <a class="share-button tw" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share','width=550,height=235');return false;">
+       <span>Twitter</span> <br>
+    </a>
+     <a  class="share-button gp" href="https://plus.google.com/share?url={{url absolute="true"}}"onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span>Google+</span> <br>
+    </a>
+    <a class="share-button fb" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span>Facebook</span> <br>
+    </a>
+    <br>
+    <br>
+    {{#author}}
+        <section class="author">
+            {{#if image}}
+                <figure class="author-image">
+                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                </figure>
+            {{/if}}
+               <div class="author-meta">
+                   {{#if location}}
+                       <span class="author-location icon-location">{{location}}</span>{{/if}}
+                   {{#if website}}
+                       <span class="author-link icon-link"><a href="{{website}}">{{website}}</a></ span>
+                   {{/if}}
+                </div>
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{/if}}
+                <p><a href="{{url}}">Read more posts by <b>{{name}}</b></a></p>
+        </section>
+    {{/author}}
+</section>
