@@ -65,3 +65,9 @@
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
+
+
+$( "#js-mobile-menu-trigger" ).click(function() {
+  $( ".link-list" ).slideToggle();
+});
+
