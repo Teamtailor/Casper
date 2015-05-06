@@ -235,10 +235,7 @@ h6 {
 a {
     color: #4A4A4A;
     transition: color ease 0.3s;
-}
-
-a:hover {
-    color: #111;
+    text-decoration: none
 }
 
 p, ul, ol, dl {
@@ -455,6 +452,7 @@ margin on the iframe, cause it breaks stuff. */
     width: 80%;
     max-width: 710px;
     margin: 0 auto;
+
 }
 
 /* Centres vertically yo. (IE8+) */
@@ -469,31 +467,201 @@ margin on the iframe, cause it breaks stuff. */
    ========================================================================== */
 
 /* Big cover image on the home page */
-.main-header {
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5rem;
+
+
+.subscribe-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    height: 38px;
+    padding: 0 20px;
+    border: transparent 1px solid;
+    color: #9EABB3;
     text-align: center;
-    background: #222 no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.1);
+    transition: all ease 0.3s;
 }
 
-.main-header .inner {
-    width: 80%;
+.subscribe-button:before {
+    font-size: 9px;
+    margin-right: 6px;
 }
 
-.main-nav {
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 41px;
+  display: block;
+  max-width: 65em;
+  display: block;
+  padding: 0 10px
+}
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper nav{
+    float: right;
+    font-size: 0.75em;
+    padding-top: 0.625em;
+}
+
+.header-top {
+  padding: 0.9375em 0 0 0;
+  background: none;
+  height: 75px;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+}
+
+
+.header .logo img {
+  width: 136px;
+  height: 31px;
+  margin-top: 5px;
+  z-index: 2000;
+  display: block;
+}
+
+.headline{
+  margin-top: 20px
+}
+
+.first-section{
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #314253;
+  background-image: -webkit-radial-gradient(50% 140%, ellipse 400% 350%, #4d6883 10%, #314253 30%, #314253);
+  background-image: radial-gradient(ellipse 400% 350% at 50% 140%, #4d6883 10%, #314253 30%, #314253)
+  }
+
+.first-section h1{
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  etter-spacing: 1px;
+  ont-size: 3.125em;
+  font-family: "Lato", sans-serif;
+}
+
+.first-section p{
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  etter-spacing: 1px;
+  padding-bottom: 30px
+}
+
+.burger {
+  display: inline;
+  float: right;
+  text-transform: uppercase;
+  color: #ef5469;
+  font-size: 12px;
+  letter-spacing: 0.125em;
+  line-height: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.burger:before{
+    font-family: 'icomoon';
+    content: "\e6a3";
+    font-size: 50px;
     position: relative;
-    padding: 35px 40px;
-    margin: 0 0 30px 0;
+    top: 5px;
+    color: $base-link-color;
+    @include transition(all .2s ease-in-out);
+}
+
+
+.burger span {
+  display: none;
+}
+.burger:before {
+  font-family: 'icomoon';
+  content: "\e6a3";
+  font-size: 50px;
+  position: relative;
+  top: 14px;
+  right: 12px;
+  color: #ef5469;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li {
+  display: inline;
+  height: auto;
+}
+
+nav ul li {
+  display: block;
+}
+
+
+/* line 190, /Users/jonas/code/teamtailor/app/assets/stylesheets/signup/base/_base.scss */
+nav ul li:first-child a, nav ul li:last-child a {
+  border-top: none;
+}
+/* line 194, /Users/jonas/code/teamtailor/app/assets/stylesheets/signup/base/_base.scss */
+nav ul li a {
+  text-align: center;
+  width: 100%;
+  float: left;
+  display: inline;
+  border-top: 1px solid rgba(150, 150, 150, 0.5);
+  height: 100%;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.125em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+/* line 229, /Users/jonas/code/teamtailor/app/assets/stylesheets/signup/base/_base.scss */
+nav ul li:last-child a {
+  color: white;
+  background-color: #ef5469;
+}
+
+
+/* line 242, /Users/jonas/code/teamtailor/app/assets/stylesheets/signup/base/_base.scss */
+nav ul li:last-child a:hover {
+  color: white;
+  background-color: #ed3d55;
+}
+
+.signup-button{
+    background: #ef5469;
+    padding: 20px;
+    border-radius: 15px
+}
+
+.signup-button a:hover{
+    color: rgba(255,255,255,0.9)
 }
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -561,6 +729,12 @@ margin on the iframe, cause it breaks stuff. */
     height: 38px;
     padding: 1px 0 5px 0;
     width: auto;
+}
+
+header .logo img {
+  width: 136px;
+  height: 31px;
+  margin-top: 5px;
 }
 
 .back-button {
@@ -672,11 +846,11 @@ margin on the iframe, cause it breaks stuff. */
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: #ef5469;
 }
 
 .no-cover.main-header {
-    min-height: 160px;
+    min-height: 75px;
     max-height: 40%;
     background: #3a4f63;
 }
@@ -1317,6 +1491,166 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+/* =========================================================
+          Other Media Queries
+==========================================================*/
+
+@media screen and (min-width: 960px) {
+  nav ul li a {
+    padding: 0.75em;
+    float: none;
+    border-top: none;
+    width: auto;
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: #ef5469;
+  }
+  nav ul li a.active {
+    color: #ef5469;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  nav ul li:last-child a {
+    margin-left: 0.75em;
+    color: white;
+    padding: 1.25em 1.875em 1.1875em 1.875em;
+    border: 1px solid #ef5469;
+    border-radius: 6px;
+    background: #ef5469;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0 120px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .burger {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  nav ul li {
+    display: inline;
+    height: auto;
+  }
+}
+
+/* ==========================================================================
+   10. Media Queries - Smaller/Bigger than 1240px
+   ========================================================================== */
+
+@media only screen and (max-width: 960px) {
+  .wrapper{
+    margin: 0;
+    padding: 0
+  }
+  .wrapper nav{
+    padding-top: 16px;
+  }
+  nav ul li{
+    padding-left: 0
+  }
+  nav{
+    min-height: 75px;
+  }
+  nav ul li a {
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: inline;
+    border-top: 1px solid rgba(150,150,150,0.5);
+    height: 100%;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.125em;
+    line-height: 12px;
+    text-transform: uppercase;
+    padding: 1.875em;
+    margin-left: -3.75em;
+  }
+  nav{
+    background: transparent;
+    background-image: none
+  }
+  nav{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    padding: 0;
+    /*background-color: #314253;
+    background-image: -webkit-radial-gradient(50% 140%, ellipse 400% 350%, #4d6883 10%, #314253 30%, #314253);
+    background-image: radial-gradient(ellipse 400% 350% at 50% 140%, #4d6883 10%, #314253 30%, #314253);*/
+    background-color: #314253;
+    float: left
+  }
+  .logopic{
+    z-index: 200;
+    position: absolute;
+    left: 10px;
+  }
+  .pagination{
+    background-image: none;
+    background: transparent;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .link-list{
+    display: inline !important;
+    position: static;
+    top: 5000px;
+  }
+}
+
+
+@media only screen and (min-width: 1240px) {
+  .desktop{
+    visibility: show
+  }
+  .mobile{
+    display: none
+  }
+  .taglist{
+    display: inline
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .desktop{
+    display: none
+  }
+  .mobile{
+    visibility: show
+  }
+  .taglist{
+    display: none
+  }
+  .author{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .wrapper{
+    padding-right: 10px;
+    padding-left: 10px
+  }
+}
 
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
@@ -1326,10 +1660,6 @@ body:not(.post-template) .post-title {
 
     .main-nav {
         padding: 15px;
-    }
-
-    blockquote {
-        margin-left: 0;
     }
 
     .main-header {
@@ -1376,9 +1706,6 @@ body:not(.post-template) .post-title {
         margin: 2.4em 0;
     }
 
-    ol, ul {
-        padding-left: 2em;
-    }
 
     h1 {
         font-size: 4.5rem;
@@ -1526,7 +1853,7 @@ body:not(.post-template) .post-title {
     .inner,
     .pagination {
         width: auto;
-        margin: 2rem auto;
+        margin-top: 90px
     }
 
     .post {
