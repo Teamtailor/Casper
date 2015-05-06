@@ -37,7 +37,21 @@ html {
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; }
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #78868e;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    line-height: 1.7em;
+
+}
 a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
@@ -176,11 +190,11 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: font-family: "Open Sans", sans-serif;
     letter-spacing: 0.01rem;
+    font-weight: 300;
     font-size: 1.8rem;
-    line-height: 1.75em;
-    color: #3A4145;
+    color: #78868e;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -856,7 +870,7 @@ header .logo img {
 }
     
 .no-cover .page-description {
-    color: rgba(0,0,0,0.5);
+    color: #ef5469;
 }
 
 .no-cover .main-nav.overlay .back-button,
@@ -1030,11 +1044,95 @@ body:not(.post-template) .post-title {
     border: none;
 }
 
+.right-box{
+    position: relative;
+    float: right;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.mobile{
+  text-align: center
+}
+
+.social-box{
+    width: 50%;
+    margin: 0 25% 0 25%;
+    text-align: center
+}
+
+.taglist{
+  width: 200px;
+  float: right;
+  text-align: center;
+  display: block;
+  margin-right: 40px;
+  border: 1px #eeeeee solid;
+  padding: 1%;
+  border-radius: 15px
+}
+
+
+.taglist ul{
+  padding: 0;
+    height: 290px;
+  overflow: scroll;
+}
+
+.taglist li{
+  list-style: none;
+
+}
+
+.share-button{
+    width: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    display: inline-block;
+    transition: all 0.25s linear 0.25s;
+    -webkit-transition: all 0.25s linear 0.25s;
+    -moz-transition: all 0.25s linear 0.25s;
+    -o-transition: all 0.25s linear 0.25s;
+}
+
+.share-button:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: 900
+}
+
+.tw{
+    background: #4099FF;
+    color: white
+}
+
+.su{
+  background: orange;
+  color: white
+}
+
+.fb{
+    background: #3b5998;
+    color: white
+}
+
+.gp{
+    background:  #d34836;
+    color: white
+}
+
+.author-box{
+  position: absolute;
+  right: 120px;
+  top: 320px;
+  width: 190px;
+}
+
+
 /* Stop .full-img from creating horizontal scroll - slight hack due to
    imperfections with browser width % calculations and rounding */
-.post-template .content {
-    overflow: hidden;
-}
 
 /* Tweak the .post wrapper style */
 .post-template .post {
@@ -1060,9 +1158,8 @@ body:not(.post-template) .post-title {
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .full-img {
-    width: 126%;
+    width: 100%;
     max-width: none;
-    margin: 0 -13%;
 }
 
 /* The author credit area after the post */
@@ -1093,6 +1190,7 @@ body:not(.post-template) .post-title {
     line-height: 1;
     font-style: italic;
     color: #9EABB3;
+    word-wrap: break-word;
 }
 
 .author-meta a {
@@ -1249,7 +1347,7 @@ body:not(.post-template) .post-title {
 }
 
 .author-profile {
-    padding: 0 15px 5rem 15px;
+    padding: 0 15px 15px 15px;
     border-bottom: #EBF2F6 1px solid;
     text-align: center;
 }
@@ -1277,43 +1375,40 @@ body:not(.post-template) .post-title {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    margin-left: -40px;
-    width: 80px;
-    height: 80px;
     border-radius: 100%;
     overflow: hidden;
-    padding: 6px;
     background: #fff;
     z-index: 2;
+    width: 190px;
+    height: 190px;
     box-shadow: #E7EEF2 0 0 0 1px;
+    float: left;
+    margin-bottom: 20px
 }
 
 .author-image .img {
     position: relative;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 190px;
+    height: 190px;
     background-size: cover;
     background-position: center center;
     border-radius: 100%;
 }
 
+
 .author-profile .author-image {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 120px;
-    height: 120px;
-    padding: 3px;
-    margin: -100px auto 0 auto;
     box-shadow: none;
 }
 
 .author-title {
-    margin: 1.5rem 0 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+    max-width: 100%
 }
 
 .author-bio {
@@ -1323,6 +1418,9 @@ body:not(.post-template) .post-title {
     color: #50585D;
     letter-spacing: 0;
     text-indent: 0;
+    display: block;
+    float: none;
+    min-height: 90px
 }
 
 .author-meta {
@@ -1551,6 +1649,22 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
+  .mobile .bio{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .author-image {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .post-content{
+    width: 100%;
+    margint: 0;
+  }
   .wrapper{
     margin: 0;
     padding: 0
@@ -1560,6 +1674,15 @@ body:not(.post-template) .post-title {
   }
   nav ul li{
     padding-left: 0
+  }
+  .link-list{
+    position: absolute;
+    left: 0;
+    top: 65px;
+    z-index: 99999;
+    width: 100%;
+    background-color: #314253;
+    display: none
   }
   nav{
     min-height: 75px;
@@ -1730,10 +1853,6 @@ body:not(.post-template) .post-title {
 
     h6 {
         font-size: 1.8rem;
-    }
-
-    .author-profile {
-        padding-bottom: 4rem;
     }
 
     .author-profile .author-bio {
@@ -1949,10 +2068,7 @@ body:not(.post-template) .post-title {
 
     .post-content .full-img {
         width: auto;
-        width: calc(100% + 32px); /* expand with to image + margins */
-        margin: 0 -16px; /* get rid of margins */
-        min-width: 0;
-        max-width: 112%; /* fallback when calc doesn't work */
+        width: 100%; /* fallback when calc doesn't work */
     }
 
     .post-meta {
@@ -2091,6 +2207,9 @@ body:not(.post-template) .post-title {
                 transform: translateY(-5px) rotate(-90deg);
     }
 }
+
+
+
 
 
 /* ==========================================================================
