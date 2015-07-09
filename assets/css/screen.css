@@ -464,6 +464,39 @@ margin on the iframe, cause it breaks stuff. */
  4. General - The main styles for the the theme
  ========================================================================== */
 
+ /* Categories navigation */
+
+ul.nav {
+  min-height: 50px;
+  background-color: #f8f8f8;
+  margin-bottom: 65px;
+}
+
+ul.nav li {
+  display: inline;
+}
+
+ul.nav li a {
+  float: left;
+  padding: 0 4%;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+ul.nav li.nav-current a {
+  color: #EF5469;
+}
+
+ul.nav li a:hover {
+  background-color: #efefef;
+}
+
  /* Big cover image on the home page */
  .main-header {
   position: relative;
