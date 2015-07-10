@@ -667,6 +667,10 @@ on photos which happen to have a light background. */
   font-family: "Lato", sans-serif;
 }
 
+.page-title:first-letter {
+  text-transform: uppercase;
+}
+
 .page-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
