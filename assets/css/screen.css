@@ -1380,6 +1380,10 @@ ul.nav li a:hover {
   background-color: #efefef;
 }
 
+.tag-inside-teamtailor .page-title {
+  text-transform: capitalize;
+}
+
 /* Promotion bar */
 
 .bottom-promote-bar {
