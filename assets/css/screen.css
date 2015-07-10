@@ -707,6 +707,8 @@ on photos which happen to have a light background. */
   min-height: 160px;
   max-height: 40%;
   background: #3a4f63;
+  background-image: -webkit-radial-gradient(50% 140%, ellipse 400% 350%, #4d6883 10%, #314253 30%, #314253);
+  background-image: radial-gradient(ellipse 400% 350% at 50% 140%, #4d6883 10%, #314253 30%, #314253);
 }
 
 .no-cover .page-description {
