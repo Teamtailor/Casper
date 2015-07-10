@@ -658,22 +658,25 @@ on photos which happen to have a light background. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
-  margin: 10px 0 10px 0;
-  font-size: 5rem;
-  letter-spacing: -1px;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
 }
 
 .page-description {
-  margin: 0;
-  font-size: 2rem;
-  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
   font-weight: 400;
-  font-family: "Merriweather", serif;
-  letter-spacing: 0.01rem;
-  color: rgba(255,255,255,0.8);
+  margin: em(10) 0 em(20) 0;
+  line-height: 30px;
+  color: white;
+  color: rgba(255,255,255,.8);
+  letter-spacing: normal;
 }
 
 .no-cover.main-header {
@@ -685,7 +688,7 @@ on photos which happen to have a light background. */
 }
 
 .no-cover .page-description {
-  color: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,.8);
 }
 
 .no-cover .main-nav.overlay .back-button,
