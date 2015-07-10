@@ -1324,6 +1324,29 @@ hover: #ed3d55;
 
 */
 
+.visit-tt {
+  float: right;
+  color: white;
+  margin-left: 12px;
+  padding: 13px 20px 13px 20px;
+  border-radius: 3px;
+  background-color: #ef5469;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.375px;
+  line-height: 12px;
+  -webkit-transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+a.visit-tt:hover {
+  color: white !important;
+  background-color: #ed3d55 !important;
+}
 
 /* Categories navigation */
 
