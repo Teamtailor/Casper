@@ -1051,7 +1051,9 @@ the class is applied with jQuery */
   height: 85px;
   min-height: 0;
   margin-bottom: 0;
-  background: transparent;
+  background: #3a4f63;
+  background-image: -webkit-radial-gradient(50% 140%, ellipse 400% 350%, #4d6883 10%, #314253 30%, #314253);
+  background-image: radial-gradient(ellipse 400% 350% at 50% 140%, #4d6883 10%, #314253 30%, #314253);
 }
 
 .tag-head.main-header {
