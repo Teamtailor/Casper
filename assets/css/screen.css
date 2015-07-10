@@ -14,9 +14,10 @@
   7.  Third Party Elements
   8.  Pagination
   9.  Footer
-  10. Media Queries (Tablet)
-  11. Media Queries (Mobile)
-  12. Animations
+  10. TT Addons
+  11. Media Queries (Tablet)
+  12. Media Queries (Mobile)
+  13. Animations
 
   */
 
@@ -464,39 +465,6 @@ margin on the iframe, cause it breaks stuff. */
  4. General - The main styles for the the theme
  ========================================================================== */
 
- /* Categories navigation */
-
-ul.nav {
-  min-height: 50px;
-  background-color: #f8f8f8;
-  margin-bottom: 65px;
-}
-
-ul.nav li {
-  display: inline;
-}
-
-ul.nav li a {
-  float: left;
-  padding: 0 4%;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 11px;
-  color: #9EABB3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-}
-
-ul.nav li.nav-current a {
-  color: #EF5469;
-}
-
-ul.nav li a:hover {
-  background-color: #efefef;
-}
-
  /* Big cover image on the home page */
 .main-header {
   position: relative;
@@ -866,55 +834,6 @@ body:not(.post-template) .post-title {
 /* ==========================================================================
  5. Single Post - When you click on an individual post
  ========================================================================== */
-
-.bottom-promote-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  float: left;
-  height: 50px;
-  background-color: white;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
-}
-
-
-.bottom-promote-bar .share-post {
-  float: left;
-}
-
-
-.bottom-promote-bar .share-post span {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 11px;
-  color: #9EABB3;
-  letter-spacing: 2px;
-  line-height: 50px;
-  margin-left: 20px;
-}
-
-.bottom-promote-bar .share-post a {
-  color: #9EABB3;
-  text-decoration: none;
-  margin: 18px 0 0 15px;
-}
-
-.bottom-promote-bar a.promote-us {
-  float: right;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 11px;
-  color: #9EABB3;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  padding: 0 4%;
-  background-color: #EF5469;
-  height: 50px;
-  line-height: 50px;
-  color: white;
-}
-
 
 .post-template .post-header {
   margin-bottom: 3.4rem;
@@ -1395,7 +1314,101 @@ pagination prev/next links */
 }
 
 /* ==========================================================================
- 10. Media Queries - Smaller than 900px
+ 10. TT addons – Teamtailor needed this
+ ========================================================================== */
+
+/*
+
+link: #ef5469;
+hover: #ed3d55;
+
+*/
+
+
+/* Categories navigation */
+
+ul.nav {
+  min-height: 50px;
+  background-color: #f8f8f8;
+  margin-bottom: 65px;
+}
+
+ul.nav li {
+  display: inline;
+}
+
+ul.nav li a {
+  float: left;
+  padding: 0 4%;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+ul.nav li.nav-current a {
+  color: #EF5469;
+}
+
+ul.nav li a:hover {
+  background-color: #efefef;
+}
+
+/* Promotion bar */
+
+.bottom-promote-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  float: left;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
+}
+
+.bottom-promote-bar .share-post {
+  float: left;
+}
+
+.bottom-promote-bar .share-post span {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.bottom-promote-bar .share-post a {
+  color: #9EABB3;
+  text-decoration: none;
+  margin: 18px 0 0 15px;
+}
+
+.bottom-promote-bar a.promote-us {
+  float: right;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 4%;
+  background-color: #EF5469;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+}
+
+
+/* ==========================================================================
+ 11. Media Queries - Smaller than 900px
  ========================================================================== */
 
  @media only screen and (max-width: 900px) {
@@ -1518,7 +1531,7 @@ pagination prev/next links */
 }
 
 /* ==========================================================================
- 11. Media Queries - Smaller than 500px
+ 12. Media Queries - Smaller than 500px
  ========================================================================== */
 
  @media only screen and (max-width: 500px) {
@@ -1780,7 +1793,7 @@ pagination prev/next links */
 }
 
 /* ==========================================================================
- 12. Animations
+ 13. Animations
  ========================================================================== */
 
  /* Used to fade in title/desc on the home page */
