@@ -1384,6 +1384,20 @@ ul.nav li a:hover {
   text-transform: capitalize;
 }
 
+/* Subscribe-button diff */
+
+.subscribe-button.diff {
+  margin: -40px 40px 0 0;
+  background: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 /* Promotion bar */
 
 .bottom-promote-bar {
