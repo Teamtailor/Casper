@@ -559,9 +559,10 @@ on photos which happen to have a light background. */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  height: 38px;
+  height: 37px;
   padding: 1px 0 5px 0;
-  width: auto;
+  margin-left: 3px;
+  width: 136px;
 }
 
 .back-button {
