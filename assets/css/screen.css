@@ -1267,6 +1267,11 @@ pagination prev/next links */
   width: auto;
 }
 
+.home-template .extra-pagination .pagination,
+.tag-tempalet .extra-pagination .pagination {
+  margin-top: -25px;
+}
+
 /* On page2+ make all the headers smaller */
 .archive-template .main-header {
   max-height: 30%;
