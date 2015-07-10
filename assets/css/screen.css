@@ -867,11 +867,60 @@ body:not(.post-template) .post-title {
  5. Single Post - When you click on an individual post
  ========================================================================== */
 
- .post-template .post-header {
-   margin-bottom: 3.4rem;
- }
+.bottom-promote-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  float: left;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
+}
 
- .post-template .post-title {
+
+.bottom-promote-bar .share-post {
+  float: left;
+}
+
+
+.bottom-promote-bar .share-post span {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.bottom-promote-bar .share-post a {
+  color: #9EABB3;
+  text-decoration: none;
+  margin: 18px 0 0 15px;
+}
+
+.bottom-promote-bar a.promote-us {
+  float: right;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 11px;
+  color: #9EABB3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 4%;
+  background-color: #EF5469;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+}
+
+
+.post-template .post-header {
+  margin-bottom: 3.4rem;
+}
+
+.post-template .post-title {
   margin-bottom: 0;
 }
 
@@ -951,7 +1000,7 @@ the class is applied with jQuery */
 }
 
 .author-meta a {
-  olor: #9EABB3;
+  color: #9EABB3;
 }
 .author-meta a:hover {
   color: #111;
