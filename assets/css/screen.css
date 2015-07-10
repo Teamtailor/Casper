@@ -482,6 +482,10 @@ margin on the iframe, cause it breaks stuff. */
   -ms-text-size-adjust: 100%;
 }
 
+.author-template .main-header {
+  margin-bottom: 5rem;
+}
+
 .main-header .inner {
   width: 80%;
 }
