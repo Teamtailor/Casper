@@ -664,7 +664,9 @@ on photos which happen to have a light background. */
   font-style: italic;
   letter-spacing: 1px;
   font-size: 50px;
+  line-height: 60px;
   font-family: "Lato", sans-serif;
+  margin: 52px 0 0 0;
 }
 
 .page-title:first-letter {
@@ -676,7 +678,7 @@ on photos which happen to have a light background. */
   font-size: 18px;
   text-align: center;
   font-weight: 400;
-  margin: em(10) 0 em(20) 0;
+  margin: 17px 0 20px 0;
   line-height: 30px;
   color: white;
   color: rgba(255,255,255,.8);
