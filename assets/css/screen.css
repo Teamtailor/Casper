@@ -1365,12 +1365,17 @@ a.visit-tt:hover {
 /* Categories navigation */
 
 ul.nav {
-  float: left;
   width: 100%;
   min-height: 50px;
   background-color: #f8f8f8;
   margin-bottom: 65px;
   padding-left: 0;
+}
+
+ul.nav:after {
+  content:"";
+  display:table;
+  clear:both;
 }
 
 ul.nav li {
