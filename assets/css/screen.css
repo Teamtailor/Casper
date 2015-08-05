@@ -1469,6 +1469,7 @@ ul.nav li a:hover {
   height: 50px;
   background-color: white;
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
+  z-index: 999999;
 }
 
 .bottom-promote-bar .share-post {
@@ -1515,8 +1516,6 @@ ul.nav li a:hover {
 .bottom-promote-bar a.promote-us:hover {
   background-color: #ed3d55;
 }
-
-
 
 /* ==========================================================================
  11. Media Queries - Smaller than 900px
