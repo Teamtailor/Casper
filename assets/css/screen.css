@@ -1362,6 +1362,17 @@ a.visit-tt:hover {
   background-color: #ed3d55 !important;
 }
 
+@media only screen and (max-width: 500px) {
+  .visit-tt {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
 /* Categories navigation */
 
 ul.nav {
@@ -1620,11 +1631,9 @@ ul.nav li a:hover {
   }
 
   .blog-logo {
+    margin-top: 45px;
     padding: 10px 10px;
-  }
-
-  .blog-logo img {
-    height: 26px;
+    width: 100%;
   }
 
   .back-button,
@@ -1670,7 +1679,7 @@ ul.nav li a:hover {
   }
 
   .blog-logo img {
-    max-height: 80px;
+    margin: 0 auto;
   }
 
   .inner,
