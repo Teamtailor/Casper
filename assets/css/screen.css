@@ -839,6 +839,14 @@ body:not(.post-template) .post-title {
  5. Single Post - When you click on an individual post
  ========================================================================== */
 
+.post-template .post-content p a {
+  color: #ef5469;
+}
+
+.post-template .post-content p a:hover {
+  color: #ed3d55;
+}
+
 .post-template .post-header {
   margin-bottom: 3.4rem;
 }
