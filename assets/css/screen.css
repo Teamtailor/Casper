@@ -971,7 +971,7 @@ the class is applied with jQuery */
 }
 
 .post-footer .share a:hover {
-  color: #50585D;
+  color: #ef5469;
 }
 
 /* The subscribe icon on the footer */
@@ -1487,7 +1487,13 @@ ul.nav li a:hover {
 .bottom-promote-bar .share-post a {
   color: #9EABB3;
   text-decoration: none;
-  margin: 18px 0 0 15px;
+  margin: 0 0 0 15px;
+  position: relative;
+  top: 4px;
+}
+
+.bottom-promote-bar .share-post a:hover {
+  color: #ef5469;
 }
 
 .bottom-promote-bar a.promote-us {
@@ -1505,6 +1511,11 @@ ul.nav li a:hover {
   line-height: 50px;
   color: white;
 }
+
+.bottom-promote-bar a.promote-us:hover {
+  background-color: #ed3d55;
+}
+
 
 
 /* ==========================================================================
