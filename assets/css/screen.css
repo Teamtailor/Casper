@@ -320,7 +320,7 @@ blockquote cite {
 blockquote cite a { font-weight: normal; }
 
 mark {
-  background-color: #FFC336;
+  background-color: rgba(239,83,105,0.23);
 }
 
 code, tt {
