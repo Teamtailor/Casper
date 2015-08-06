@@ -30,7 +30,9 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
     <section class="post-content">
       {{#if image}}
-        <img src={{image}} />
+        <p>
+          <img src={{image}} />
+        </p>
       {{/if}}
 
       {{content}}
