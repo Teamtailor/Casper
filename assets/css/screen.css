@@ -1462,6 +1462,13 @@ ul.nav li a:hover {
   -ms-text-size-adjust: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+  .subscribe-button.diff {
+    margin: -52px 40px 0 0;
+  }
+}
+
+
 /* Promotion bar */
 
 .bottom-promote-bar {
