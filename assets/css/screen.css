@@ -719,6 +719,10 @@ on photos which happen to have a light background. */
   hyphens: auto;
 }
 
+.post .post-image {
+  width: 100%;
+}
+
 /* Add a little circle in the middle of the border-bottom on our .post
 just for the lolz and stylepoints. */
 .post:after {
