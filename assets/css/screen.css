@@ -1483,6 +1483,12 @@ ul.nav li a:hover {
   z-index: 999999;
 }
 
+@media only screen and (max-width: 500px) {
+  .bottom-promote-bar {
+    display: none;
+  }
+}
+
 .bottom-promote-bar .share-post {
   float: left;
 }
