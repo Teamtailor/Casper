@@ -1376,12 +1376,23 @@ a.visit-tt:hover {
 
 @media only screen and (max-width: 500px) {
   .visit-tt {
-    width: 100%;
+    width: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25px;
+    right: 0;
     margin: 0;
+    padding: 0;
     border-radius: 0;
+    background: none;
+    color: #ef5469 !important;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+
+  a.visit-tt:hover {
+    color: #ef5469 !important;
+    background: none !important;
   }
 }
 
@@ -1621,6 +1632,7 @@ ul.nav li a:hover {
   height: 50px;
   line-height: 50px;
   color: white;
+  display: none;
 }
 
 .bottom-promote-bar a.promote-us:hover {
@@ -1935,9 +1947,11 @@ ul.nav li a:hover {
   }
 
   .blog-logo {
-    margin-top: 45px;
     padding: 10px 10px;
-    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
   }
 
   .back-button,
@@ -2025,6 +2039,7 @@ ul.nav li a:hover {
 
   .page-title {
     font-size: 3rem;
+    line-height: 35px;
   }
 
   .post-excerpt p {
