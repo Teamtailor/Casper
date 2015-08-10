@@ -1493,15 +1493,15 @@ ul.nav li a:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
-  .top-promote-bar {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 900px) {
   .top-promote-bar {
     height: 47px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-promote-bar {
+    display: none;
   }
 }
 
