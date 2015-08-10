@@ -1737,6 +1737,12 @@ ul.nav li a:hover {
   display: block;
   text-align: right;
   width: 42%;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 900px) {
@@ -1749,7 +1755,7 @@ ul.nav li a:hover {
 }
 .call-to-action .btn-wrapp .btn {
   position: relative;
-  padding: 30px 15%;
+  padding: 25px 15%;
   color: white;
   background-color: #ef5469;
   font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -1761,6 +1767,7 @@ ul.nav li a:hover {
   text-transform: uppercase;
   border-radius: 3px;
 }
+
 @media screen and (max-width: 900px) {
   .call-to-action .btn-wrapp .btn {
     text-align: center;
@@ -1777,41 +1784,6 @@ ul.nav li a:hover {
 
 .call-to-action .btn-wrapp .btn:hover {
   background-color: #ed3d55;
-}
-
-.floating {
-  animation-name: floating;
-  -webkit-animation-name: floating;
-
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(8%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@-webkit-keyframes floating {
-  0% {
-    -webkit-transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform: translateY(8%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-  }
 }
 
 /* ==========================================================================
@@ -2252,6 +2224,36 @@ ul.nav li a:hover {
   60% {
     -webkit-transform: translateY(-5px) rotate(-90deg);
     transform: translateY(-5px) rotate(-90deg);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
