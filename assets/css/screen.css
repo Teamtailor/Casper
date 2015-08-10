@@ -1303,8 +1303,8 @@ pagination prev/next links */
  ========================================================================== */
 
 .site-footer {
+  clear: both;
   position: relative;
-  margin: 8rem 0 0 0;
   padding: 0.5rem 15px;
   border-top: #EBF2F6 1px solid;
   font-family: "Open Sans", sans-serif;
@@ -1468,7 +1468,6 @@ ul.nav li a:hover {
   }
 }
 
-
 /* Promotion bar */
 
 .bottom-promote-bar {
@@ -1532,6 +1531,193 @@ ul.nav li a:hover {
 
 .bottom-promote-bar a.promote-us:hover {
   background-color: #ed3d55;
+}
+
+/* Whats next */
+
+.whats-next {
+  height: 300px;
+}
+
+.whats-next img {
+  width: 100%;
+}
+
+/* CTA */
+
+.call-to-action {
+  position: relative;
+  color: white;
+  background-color: #314253;
+  background-image: -webkit-radial-gradient(70% 50%, ellipse 320% 480%, #4d6883 10%, #314253 30%, #314253);
+  background-image: radial-gradient( ellipse 320% 480% at 70% 50%, #4d6883 10%, #314253 30%, #314253);
+  padding: 70px 40px 100px 40px;
+  margin-top: 50px;
+  float: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.call-to-action:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .call-to-action {
+    padding: 50px 10px 60px 10px;
+    float: left;
+    display: block;
+    margin-right: 6.6666666667%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .call-to-action {
+    padding: 40px 10px 50px 10px;
+  }
+}
+
+.call-to-action h2,
+.call-to-action p {
+  color: white;
+  text-align: left;
+  float: left;
+  display: block;
+  width: 58%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .call-to-action h2,
+  .call-to-action p {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .call-to-action h2,
+  .call-to-action p {
+    text-align: left;
+  }
+}
+
+.call-to-action h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 52px 0 0 0;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  .call-to-action h2 {
+    line-height: 55px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .call-to-action h2 {
+    text-align: left;
+    line-height: 50px;
+  }
+}
+
+.call-to-action p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.call-to-action .btn-wrapp {
+  margin-top: -50px;
+  float: right;
+  display: block;
+  text-align: right;
+  width: 42%;
+}
+
+@media screen and (max-width: 900px) {
+  .call-to-action .btn-wrapp {
+    display: block;
+    margin: 50px auto 20px auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+.call-to-action .btn-wrapp .btn {
+  position: relative;
+  padding: 30px 15%;
+  color: white;
+  background-color: #ef5469;
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+@media screen and (max-width: 900px) {
+  .call-to-action .btn-wrapp .btn {
+    text-align: center;
+    padding: 25px 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .call-to-action .btn-wrapp .btn {
+    text-align: center;
+    padding: 25px 15px;
+  }
+}
+
+.call-to-action .btn-wrapp .btn:hover {
+  background-color: #ed3d55;
+}
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 /* ==========================================================================
