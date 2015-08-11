@@ -1593,14 +1593,14 @@ ul.nav li a:hover {
   z-index: 999999;
 }
 
-@media only screen and (max-width: 500px) {
-  .bottom-promote-bar {
-    display: none;
-  }
-}
-
 .bottom-promote-bar .share-post {
   float: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .bottom-promote-bar .share-post {
+    display: none;
+  }
 }
 
 .bottom-promote-bar .share-post span {
@@ -1629,6 +1629,13 @@ ul.nav li a:hover {
 #mc_embed_signup {
   float: right;
   margin: 6px 40px 0 0;
+}
+
+@media only screen and (max-width: 500px) {
+  #mc_embed_signup  {
+    float: none;
+    margin: 6px auto 0 auto;
+  }
 }
 
 #mc_embed_signup label {
@@ -1668,6 +1675,16 @@ ul.nav li a:hover {
   outline: none;
 }
 
+@media only screen and (max-width: 500px) {
+  #mc_embed_signup input[type="email"] {
+    width: 64%;
+    box-sizing: border-box;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+  }
+}
+
 #mc_embed_signup input[type="email"]::-webkit-input-placeholder {
   color: rgba(49, 66, 83, .8);
 }
@@ -1703,6 +1720,14 @@ ul.nav li a:hover {
   height: 38px;
   line-height: 38px;
 }
+
+@media only screen and (max-width: 500px) {
+  #mc_embed_signup .button {
+    width: 30%;
+    box-sizing: border-box;
+  }
+}
+
 
 #mc_embed_signup .button:hover {
   background-color: #ed3d55;
