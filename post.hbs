@@ -36,6 +36,16 @@ the {body} of the default.hbs template, which contains our header/footer. }}
       {{content}}
     </section>
 
+    <div class="you-should-read-more">
+      {{#prev_post}}
+        <a href="{{url}}" title="{{title}}">&laquo; Previous</a>
+      {{/prev_post}}
+
+      {{#next_post}}
+        <a class="push-right" href="{{url}}" title="{{title}}">Next &raquo;</a>
+      {{/next_post}}
+    </div>
+
     <footer class="post-footer">
 
       {{! Everything inside the #author tags pulls data from the author }}

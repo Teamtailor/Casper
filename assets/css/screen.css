@@ -1754,6 +1754,46 @@ ul.nav li a:hover {
   background-color: #ed3d55;
 }
 
+.you-should-read-more {
+  float: left;
+  width: 100%;
+}
+
+.you-should-read-more a {
+  color: #7D8B93;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border: none;
+  float: left;
+  position: relative;
+  top: -3px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 900px) {
+  .you-should-read-more a {
+    top: -1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .you-should-read-more a {
+    top: 7px;
+  }
+}
+
+.you-should-read-more a:hover {
+  border-bottom: 1px solid #ef5469;
+}
+
+.you-should-read-more a.push-right {
+  float: right;
+}
+
 /* CTA */
 
 .call-to-action {
