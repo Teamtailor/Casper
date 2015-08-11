@@ -1624,26 +1624,6 @@ ul.nav li a:hover {
   color: #ef5469;
 }
 
-.bottom-promote-bar a.promote-us {
-  float: right;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 11px;
-  color: #9EABB3;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  padding: 0 4%;
-  background-color: #EF5469;
-  height: 50px;
-  line-height: 50px;
-  color: white;
-}
-
-.bottom-promote-bar a.promote-us:hover {
-  background-color: #ed3d55;
-}
-
 /* MailChimp */
 
 #mc_embed_signup {
