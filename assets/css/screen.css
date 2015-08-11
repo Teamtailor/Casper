@@ -1674,9 +1674,12 @@ ul.nav li a:hover {
   -webkit-transition: width 0.2s ease-in-out;
   -moz-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
-  background-color: #D6E1E8;
   background-color:  #DBE5EC;
   outline: none;
+}
+
+#mc_embed_signup input[type="email"]:focus {
+  background-color: #D6E1E8;
 }
 
 @media only screen and (max-width: 500px) {
@@ -1723,6 +1726,7 @@ ul.nav li a:hover {
   float: left;
   height: 38px;
   line-height: 38px;
+  outline: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -1732,7 +1736,7 @@ ul.nav li a:hover {
   }
 }
 
-
+#mc_embed_signup .button:focus,
 #mc_embed_signup .button:hover {
   background-color: #ed3d55;
 }
