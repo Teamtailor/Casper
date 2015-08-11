@@ -1892,6 +1892,12 @@ ul.nav li a:hover {
   background-color: #ed3d55;
 }
 
+/* Disqus */
+
+#disqus_thread {
+  margin-top: 50px;
+}
+
 
 /* ==========================================================================
  11. Media Queries - Smaller than 900px
