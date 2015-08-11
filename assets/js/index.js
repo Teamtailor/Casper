@@ -6,6 +6,44 @@
  (function ($, sr, undefined) {
   "use strict";
 
+  var scrolling = false,
+      $win = $(window),
+      $header = $("#top-promote-bar"),
+      $topSectionHeight = $(".main-header").outerHeight();
+
+  $win.scroll(function() {
+    scrolling = true;
+  });
+
+  var slideDown = function () {
+    if(!$header.hasClass("fixed")) {
+      $header.css({top: '-100px'});
+      $header.addClass("fixed");
+      $header.animate({top: '0px'}, 300);
+    }
+  };
+
+  var slideUp = function () {
+    if($header.hasClass("fixed")) {
+      $header.animate({top: '-100px'}, 300, function(){
+        $header.removeClass("fixed");
+      });
+    }
+  };
+
+  setInterval(function () {
+    if(scrolling) {
+      scrolling = false;
+
+      if($win.scrollTop() > $topSectionHeight) {
+        slideDown();
+      } else if($win.scrollTop() < $topSectionHeight) {
+        slideUp();
+      }
+    }
+  }, 500);
+
+
   var $document = $(document),
 
         // debouncing function from John Hann
@@ -96,6 +134,3 @@
 
     };
   })(jQuery, 'smartresize');
-
-
-
