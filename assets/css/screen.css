@@ -784,6 +784,7 @@ body:not(.post-template) .post-title {
 
 .post-meta a:hover {
   border-bottom: 1px solid #ef5469;
+  background: #F9F9F9;
 }
 
 .user-meta {
