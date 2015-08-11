@@ -1487,7 +1487,7 @@ ul.nav li a:hover {
 
 /* Promotion top bar */
 
-.top-promote-bar {
+#top-promote-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -1497,21 +1497,22 @@ ul.nav li a:hover {
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
   z-index: 999999;
   text-align: center;
+  /* display: none; */
 }
 
 @media only screen and (max-width: 900px) {
-  .top-promote-bar {
+  #top-promote-bar {
     height: 47px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .top-promote-bar {
+  #top-promote-bar {
     display: none;
   }
 }
 
-.top-promote-bar span {
+#top-promote-bar span {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 11px;
   color: rgba(255, 255, 255, .8);
@@ -1522,13 +1523,13 @@ ul.nav li a:hover {
 }
 
 @media only screen and (max-width: 900px) {
-  .top-promote-bar span {
+  #top-promote-bar span {
     display: block;
     line-height: 30px;
   }
 }
 
-.top-promote-bar a {
+#top-promote-bar a {
   color: rgba(255, 255, 255, .8);
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   text-decoration: none;
@@ -1544,34 +1545,34 @@ ul.nav li a:hover {
   white-space: nowrap;
 }
 
-.top-promote-bar a:last-child {
+#top-promote-bar a:last-child {
   color: white;
   border-color: #EF5469;
   background-color: #EF5469;
 }
 
-.top-promote-bar a:hover:last-child {
+#top-promote-bar a:hover:last-child {
   background-color: #ed3d55;
   border-color: #ed3d55;
 }
 
-.top-promote-bar a:hover {
+#top-promote-bar a:hover {
   color: white;
   border-color: white;
 }
 
-.top-promote-bar .see-why {
+#top-promote-bar .see-why {
   position: relative;
   padding-left: 30px;
 }
 
 @media only screen and (max-width: 900px) {
-  .top-promote-bar .see-why {
+  #top-promote-bar .see-why {
     background-color: rgba(49, 66, 83, 0.952941);
   }
 }
 
-.top-promote-bar .see-why:before {
+#top-promote-bar .see-why:before {
   content: "➤";
   font-size: 16px;
   position: absolute;
@@ -1579,7 +1580,7 @@ ul.nav li a:hover {
   left: 8px;
 }
 
-.author-template .top-promote-bar {
+.author-template #top-promote-bar {
   display: none;
 }
 
