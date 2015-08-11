@@ -1629,6 +1629,12 @@ ul.nav li a:hover {
   margin-left: 40px;
 }
 
+@media only screen and (max-width: 900px) {
+  .bottom-promote-bar .share-post span {
+    margin-left: 20px;
+  }
+}
+
 .bottom-promote-bar .share-post a {
   color: #9EABB3;
   text-decoration: none;
@@ -1646,6 +1652,12 @@ ul.nav li a:hover {
 #mc_embed_signup {
   float: right;
   margin: 6px 40px 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #mc_embed_signup {
+    margin: 6px 20px 0 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
