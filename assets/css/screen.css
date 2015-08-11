@@ -1579,6 +1579,10 @@ ul.nav li a:hover {
   left: 8px;
 }
 
+.author-template .top-promote-bar {
+  display: none;
+}
+
 /* Promotion bottom bar */
 
 .bottom-promote-bar {
