@@ -1444,6 +1444,7 @@ ul.nav {
 
 @media only screen and (max-width: 500px) {
   ul.nav {
+    display: none;
     margin-bottom: 30px;
   }
 }
