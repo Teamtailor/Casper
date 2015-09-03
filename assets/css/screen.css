@@ -1723,6 +1723,7 @@ ul.nav li a:hover {
   margin-left: 10px;
   border: none;
   -webkit-appearance: none;
+  border-radius: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   height: 38px;
