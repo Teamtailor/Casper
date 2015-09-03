@@ -1732,6 +1732,7 @@ ul.nav li a:hover {
   transition: width 0.2s ease-in-out;
   background-color:  #DBE5EC;
   outline: none;
+  -webkit-appearance: none;
 }
 
 #mc_embed_signup input[type="email"]:focus {
