@@ -2002,6 +2002,11 @@ ul.nav li a:hover {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 500px) {
+  .post-title {
+    margin-top: 30px;
+  }
+}
 
 /* ==========================================================================
  11. Media Queries - Smaller than 900px
