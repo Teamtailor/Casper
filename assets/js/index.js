@@ -73,7 +73,7 @@
         $document.ready(function () {
 
           var $postContent = $(".post-content");
-          $postContent.fitVids({customSelector: "iframe[src*='wistia.com']"});
+          $postContent.fitVids({customSelector: "iframe[src*='wistia']"});
 
           function updateImageWidth() {
             var $this = $(this),
