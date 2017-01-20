@@ -744,8 +744,6 @@ on photos which happen to have a light background. */
   margin: 4rem auto;
   padding-bottom: 4rem;
   border-bottom: #EBF2F6 1px solid;
-  word-break: break-word;
-  hyphens: auto;
 }
 
 .post .post-image {
